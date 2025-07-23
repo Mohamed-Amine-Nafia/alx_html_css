@@ -143,16 +143,22 @@ header {
   font-family: "Yeseva One", sans-serif;
 }
 article {
+  flex: 2;
+  overflow-y: auto;
 }
 header {
   border-bottom: 1px solid rgb(221, 221, 221);
   transition: border-bottom-color 1s ease;
+  position: sticky;
+  top: 0;
 }
 header a {
   color: rgba(0, 0, 0, 0.8);
 }
 aside {
   background: #fafafa;
+  flex: 1;
+  overflow-y: auto;
 }
 aside p {
   border: 1px solid #bbb;
@@ -271,5 +277,10 @@ h6 {
   }
   header .right {
     float: none;
+  }
+}
+@media (max-width: 768px) {
+  .works_on_smartphone main {
+    flex-direction: column;
   }
 }

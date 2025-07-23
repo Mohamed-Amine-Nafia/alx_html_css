@@ -1,0 +1,91 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+header,
+footer {
+  background-color: #004466;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  background-color: white;
+}
+
+article {
+  flex: 2;
+  padding: 2em;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-right: 2px solid #e0e0e0;
+}
+
+aside {
+  flex: 1;
+  padding: 2em;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border-left: 2px solid #d0d0d0;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .works_on_smartphone main {
+    flex-direction: column;
+  }
+
+  article,
+  aside {
+    flex: auto;
+    border: none;
+    padding: 1em;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .logo {
+    margin-bottom: 0.5em;
+  }
+}
