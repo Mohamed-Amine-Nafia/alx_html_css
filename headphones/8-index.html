@@ -24,25 +24,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="1-styles.css" />
+    <link rel="stylesheet" href="8-styles.css" />
   </head>
   <body>
     <div class="wrapper">
       <section class="hero-section">
         <header>
-          <input type="checkbox" id="menu-toggle" />
-          <label
-            for="menu-toggle"
-            class="menu-icon"
-            style="color: #fff"
-          ></label>
-          <span class="icon-close">&#10006;</span>
+          <div class="menu-icon" id="menu">
+            <span></span><span></span><span></span>
+          </div>
           <img src="images/logo_headphones.png" alt="the website logo" />
-          <nav>
+          <nav id="nav">
             <ul>
-              <li><a href="">what we do</a></li>
-              <li><a href="">our results</a></li>
-              <li><a href="">contact us</a></li>
+              <li><a href="#what-we-do">what we do</a></li>
+              <li><a href="#our-results">our results</a></li>
+              <li><a href="#contact-us">contact us</a></li>
             </ul>
           </nav>
         </header>
@@ -60,7 +56,7 @@
       </section>
       <main>
         <!--what we do section-->
-        <section class="what-we-do-section">
+        <section class="what-we-do-section" id="what-we-do">
           <h2>What we do</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
@@ -102,7 +98,67 @@
             </div>
           </div>
         </section>
+        <!--Our Results section-->
+        <section class="our-results-section" id="our-results">
+          <h2>Our results speak for themselves</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eius
+            libero fuga totam soluta a recusandae reiciendis, eaque consequuntur
+            quo fugit earum explicabo eveniet voluptatem non laboriosam in
+            cupiditate error? Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Optio ut culpa explicabo officia numquam
+            recusandae consequuntur repudiandae perspiciatis adipisci, delectus
+            maxime molestiae amet aliquid consequatur quaerat reiciendis, nemo
+            quidem magni!
+          </p>
+          <div class="results-container">
+            <div class="result">
+              <span>+2%</span>
+              <span>Lorem ipsum dolor</span>
+            </div>
+            <div class="result">
+              <span>+2%</span>
+              <span>Lorem ipsum dolor</span>
+            </div>
+            <div class="result">
+              <span>+2%</span>
+              <span>Lorem ipsum dolor</span>
+            </div>
+            <div class="result">
+              <span>+2%</span>
+              <span>Lorem ipsum dolor</span>
+            </div>
+          </div>
+        </section>
+        <!--Contact Us Section-->
+        <section class="contact-section" id="contact-us">
+          <h3>Contact Us</h3>
+          <form action="/submit-form" method="post">
+            <input type="text" name="" id="" placeholder="Name" />
+            <input type="email" name="" id="" placeholder="Email" />
+            <input type="text" name="" id="" placeholder="Message" />
+            <input type="submit" value="Call To Action" />
+          </form>
+        </section>
       </main>
+      <footer>
+        <div>
+          <img src="images/logo_headphones.png" alt="headphones logo" />
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook" style="color: #ffffff"></i
+            ></a>
+            <a href="https://www.x.com" target="_blank">
+              <i class="fa-brands fa-twitter" style="color: #ffffff"></i
+            ></a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram" style="color: #ffffff"></i
+            ></a>
+          </div>
+        </div>
+        <span>&copy; headphones 2020</span>
+      </footer>
     </div>
+    <script src="8-script.js"></script>
   </body>
 </html>
